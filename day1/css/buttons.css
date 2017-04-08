@@ -1,0 +1,80 @@
+input {
+  display: none; }
+
+#scenc-wrap .scenc-touch h2 {
+  text-align: center; }
+#scenc-wrap .scenc-radio {
+  width: 200px;
+  margin: 10px auto;
+  height: auto; }
+
+.scenc-radio input:checked + .scenc-touch_radio .scencbtn, .scenc-radio input:checked + .scenc-touch_icon::after {
+  right: -1px; }
+
+.scenc-touch_radio, .scenc-touch_icon {
+  width: 50px;
+  height: 24px;
+  border: 1px solid #cccccc;
+  border-radius: 12px; }
+  .scenc-touch_radio .scenc-btn, .scenc-touch_icon .scenc-btn {
+    right: 26px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    background: #ffffff;
+    -webkit-transition: right 0.5s; }
+
+.scenc-touch_icon::after {
+  content: "";
+  right: 26px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-transition: right 0.5s;
+  display: block;
+  position: absolute; }
+
+.scenc-checkbox input:checked + .scenc-touch_checkbox {
+  background: #01ff70; }
+  .scenc-checkbox input:checked + .scenc-touch_checkbox::after {
+    display: block; }
+
+.scenc-checkbox .scenc-touch_checkbox {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cccccc; }
+  .scenc-checkbox .scenc-touch_checkbox::after {
+    content: "";
+    width: 18px;
+    height: 12px;
+    -webkit-transform: rotate(-45deg);
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    display: none;
+    color: #ffffff; }
+.scenc-checkbox .scenc-radius {
+  border-radius: 50%; }
+  .scenc-checkbox .scenc-radius::after {
+    margin-top: 3px; }
+
+.scenc-checkbox span {
+  display: inline-block; }
+
+.scenc-radio input:checked + .scenc-green, .scenc-radio input:checked + .scenc-green, .scenc-checkbox input:checked + .scenc-green {
+  background: #55a532; }
+
+.scenc-radio input:checked + .scenc-yellow, .scenc-radio input:checked + .scenc-yellow, .scenc-checkbox input:checked + .scenc-yellow {
+  background: #ffdc00; }
+
+.scenc-radio input:checked + .scenc-red, .scenc-radio input:checked + .scenc-red, .scenc-checkbox input:checked + .scenc-red {
+  background: #990000; }
+
+/*# sourceMappingURL=style.css.map */
